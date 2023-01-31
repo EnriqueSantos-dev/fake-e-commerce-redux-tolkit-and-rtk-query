@@ -44,7 +44,7 @@ export function Cart() {
               type="button"
               className="mt-3 h-10 w-full rounded bg-red-500 font-bold text-white transition-colors hover:bg-red-600 focus:bg-red-600 focus:outline-none focus:ring-1 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-50"
             >
-              finalizar compra
+              checkout
             </button>
           </div>
         </Popover.Content>
