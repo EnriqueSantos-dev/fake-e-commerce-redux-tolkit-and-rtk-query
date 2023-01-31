@@ -1,3 +1,4 @@
+import { HiMinus, HiPlus } from 'react-icons/hi2';
 import { useAppDispatch } from '~/redux/hooks';
 import {
   calculateTotalPrice,
@@ -8,8 +9,6 @@ import {
 } from '~/redux/slices/cart-slice';
 import { CartItem } from '~/types';
 import { transformPriceToDisplayed } from '~/utils';
-
-import { HiMinus, HiPlus } from 'react-icons/hi2';
 
 interface CartProductItemProps {
   product: CartItem;
@@ -74,7 +73,7 @@ export function CartProductItem({ product }: CartProductItemProps) {
             className="focus:ring-inset-2 rounded-md p-1 text-xs font-semibold text-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-200"
             onClick={handleDeleteItem}
           >
-            excluir
+            delete
           </button>
         </div>
       </div>

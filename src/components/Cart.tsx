@@ -1,12 +1,12 @@
+import { CartProductItem } from './CartProductItem';
 import * as Popover from '@radix-ui/react-popover';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { useAppSelector } from '~/redux/hooks/hooks';
 import { transformPriceToDisplayed } from '~/utils';
-import { CartProductItem } from './CartProductItem';
 
 export function Cart() {
   const { items, quantityItems, totalPrice } = useAppSelector(
-    (state) => state.cart,
+    (state) => state.cart
   );
 
   return (
@@ -44,7 +44,7 @@ export function Cart() {
               type="button"
               className="mt-3 h-10 w-full rounded bg-red-500 font-bold text-white transition-colors hover:bg-red-600 focus:bg-red-600 focus:outline-none focus:ring-1 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-50"
             >
-              checkout
+              Checkout
             </button>
           </div>
         </Popover.Content>
